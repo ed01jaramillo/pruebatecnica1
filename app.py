@@ -14,7 +14,7 @@ def get_random_cat():
         response.raise_for_status()  # Verifica si hay errores en la solicitud HTTP
         image_data = BytesIO(response.content)
         # Crear una respuesta con la imagen y el título
-        return send_file(image_data, mimetype='image/jpeg', as_attachment=True, attachment_filename='imagen_gato.jpg', add_etags=False, cache_timeout=0), "IMAGEN DE GATO RECIBIDA"
+        return send_file(image_data, mimetype='image/jpeg', as_attachment=True, attachment_filename='imagen_gato.jpg', add_etags=False, cache_timeout=0), "IMAGEN DE GATO RECIBIDA: "
     except requests.RequestException as e:
         return jsonify({'error': str(e)}), 500
 
