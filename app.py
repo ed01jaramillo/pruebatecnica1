@@ -20,7 +20,7 @@ def get_random_cat():
 # Endpoint de ejemplo para devolver un valor X
 @app.route('/example', methods=['GET'])
 def example_endpoint():
-    data = {'message': 'Este es un valor de ejemplo, si quieres generar una imagen ve al directorio de /random-cat con tu direccion local'}
+    data = {'message': 'Este es un valor de prueba, si quieres generar una imagen ve al directorio de /random-cat con tu direccion local'}
     return jsonify(data)
 
 if __name__ == '__main__':
