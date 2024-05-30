@@ -9,3 +9,5 @@ Se deben utilizar 2 comandos claves para ejecutar el servicio, como primer paso 
  Despues se corre dicha imagen en un contenedor para poder visualizar los endpoint correctamente de manera local con el siguiente comando: **"docker run -d -p 5000:5000 edjaramillo/flask-cat-app:latest"**
 
 Para poder ver las imagenes aleatorias de los gatos se debe ingresar a la siguiente direccion local como ejemplo: **http://localhost:5000/random-cat**
+
+Cabe resaltar que se debe tener Docker descargado e instalado en el sistema.
