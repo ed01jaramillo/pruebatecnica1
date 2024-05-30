@@ -10,4 +10,4 @@ Se deben utilizar 2 comandos claves para ejecutar el servicio, como primer paso 
 
 Para poder ver las imagenes aleatorias de los gatos se debe ingresar a la siguiente direccion local como ejemplo: **http://localhost:5000/random-cat**
 
-Cabe resaltar que se debe tener Docker descargado e instalado en el sistema.
+Cabe resaltar que se debe tener Docker Desktop descargado e instalado en el sistema.
