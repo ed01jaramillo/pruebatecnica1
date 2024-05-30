@@ -1,4 +1,6 @@
 from flask import Flask, jsonify, send_file
+import requests
+from io import BytesIO
 
 app = Flask(__name__)
 
