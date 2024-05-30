@@ -37,9 +37,6 @@ jobs:
         push: false
         tags: ${{ secrets.DOCKER_USERNAME }}/flask-cat-app:latest
 
-    - name: Pull Docker image
-      run: |
-        docker pull ${{ secrets.DOCKER_USERNAME }}/flask-cat-app:latest
 
     - name: Validate Docker image
       run: |
