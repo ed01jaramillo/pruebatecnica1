@@ -30,13 +30,12 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
 
-    - name: Build Docker image
+    - name: Build and push Docker image
       uses: docker/build-push-action@v3
       with:
         context: .
-        push: false
+        push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/flask-cat-app:latest
-        no-cache: true
 
     - name: Validate Docker image
       run: |
@@ -46,12 +45,3 @@ jobs:
         curl --fail http://localhost:5000/example
         docker stop flask-cat-app
         docker rm flask-cat-app
-
-    - name: Push Docker image to Docker Hub
-      run: |
-        docker push ${{ secrets.DOCKER_USERNAME }}/flask-cat-app:latest
-
-    - name: Provide instructions to run the service from Docker Hub
-      run: |
-        echo "To run the service from Docker Hub, use the following command:"
-        echo "docker run -d -p 5000:5000 ${DOCKER_USERNAME}/flask-cat-app:latest"
