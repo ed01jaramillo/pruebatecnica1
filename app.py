@@ -5,7 +5,7 @@ from io import BytesIO
 app = Flask(__name__)
 
 # Endpoint para obtener una imagen aleatoria de un gato
-@app.route('/random-cat1', methods=['GET'])
+@app.route('/random-cat2', methods=['GET'])
 
 
 def get_random_cat():
