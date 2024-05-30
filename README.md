@@ -1,6 +1,6 @@
 # Descripcion
 
-En primera instancia se realizó el servicio backend utilizando python y flask asi mismo los endpoint utilizados en este caso son "/random-cat" para ver las imagenes de gatos y "/example" para pruebas, luego se configuró un pipeline para subir la imagen a Docker hub y adicionalmente subir automaticamente cualquier modificacion que se haga en el repositorio hacia Docker hub.
+En primera instancia, se desarrolló el servicio backend utilizando Python y Flask. Los endpoints implementados son "/random-cat" para visualizar imágenes de gatos y "/example" para pruebas. Posteriormente, se configuró un pipeline para subir la imagen a Docker Hub y, adicionalmente, subir automáticamente cualquier modificación realizada en el repositorio a Docker Hub.
 
 # Instrucciones
 
