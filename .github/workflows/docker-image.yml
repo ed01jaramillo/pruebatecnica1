@@ -31,12 +31,12 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build Docker image
-      uses: docker/build-push-action@v2
+      uses: docker/build-push-action@v3
       with:
         context: .
         push: false
         tags: ${{ secrets.DOCKER_USERNAME }}/flask-cat-app:latest
-
+        no-cache: true
 
     - name: Validate Docker image
       run: |
