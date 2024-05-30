@@ -4,7 +4,7 @@ Primero, se desarrolló el servicio backend utilizando Python y Flask, implement
 
 # Instrucciones
 
-Se deben utilizar 2 comandos claves para ejecutar el servicio, como primer paso se hace pull de la ultima version de la imagen mediante:**"docker pull edjaramillo/flask-cat-app:latest"**
+Se deben utilizar 2 comandos claves en el terminal CMD para ejecutar el servicio, como primer paso se hace pull de la ultima version de la imagen mediante:**"docker pull edjaramillo/flask-cat-app:latest"**
 
  Despues se corre dicha imagen en un contenedor para poder visualizar los endpoint correctamente de manera local con el siguiente comando: **"docker run -d -p 5000:5000 edjaramillo/flask-cat-app:latest"**
 
