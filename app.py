@@ -6,7 +6,10 @@ app = Flask(__name__)
 @app.route('/random-cat', methods=['GET'])
 def get_random_cat():
     try:
-        # Tu código para obtener la imagen aleatoria de un gato
+        response = requests.get('https://cataas.com/cat')
+        response.raise_for_status()  # Verifica si hay errores en la solicitud HTTP
+        image_data = BytesIO(response.content)
+        return send_file(image_data, mimetype='image/jpeg')      
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
