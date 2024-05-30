@@ -5,7 +5,7 @@ from io import BytesIO
 app = Flask(__name__)
 
 # Endpoint para obtener una imagen aleatoria de un gato
-@app.route('/random-cat3', methods=['GET'])
+@app.route('/random-cat', methods=['GET'])
 
 
 def get_random_cat():
@@ -20,7 +20,7 @@ def get_random_cat():
 # Endpoint de ejemplo para devolver un valor X
 @app.route('/example', methods=['GET'])
 def example_endpoint():
-    data = {'message': 'Hola desde el servidor de gatos'}
+    data = {'message': 'Este es un endpoint de ejemplo, si quieres ver fotos de gatos dirigete al directorio "/random-cat" con la dirrecion local'}
     return jsonify(data)
 
 if __name__ == '__main__':
