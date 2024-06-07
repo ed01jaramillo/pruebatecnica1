@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, send_file
+from flask import Flask, jsonify, send_file,render_template
 import requests
 from io import BytesIO
 
@@ -20,8 +20,7 @@ def get_random_cat():
 # Endpoint de ejemplo para devolver un valor X
 @app.route('/example', methods=['GET'])
 def example_endpoint():
-    data = {'message': 'Este es una prueba, si quieres ver fotos de GATOS dirigete al directorio "/random-cat" con la direccion local'}
-    return jsonify(data)
+    return render_template('home2.html')
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
