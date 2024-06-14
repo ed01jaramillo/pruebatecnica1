@@ -20,7 +20,7 @@ def get_random_cat():
 # Endpoint de ejemplo para devolver un valor X
 @app.route('/example', methods=['GET'])
 def example_endpoint():
-    return render_template('home.html')
+    return render_template('home2.html')
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
