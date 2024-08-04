@@ -1,4 +1,4 @@
-# Descripcion - Prueba
+# Descripcion - Prueba45
 
 Primero, se desarrolló el servicio backend utilizando Python y Flask, implementando dos endpoints: "/random-cat" para visualizar imágenes de gatos y "/example" para pruebas. Luego, se configuró un pipeline para subir la imagen a Docker Hub y automatizar la actualización de cualquier modificación realizada en el repositorio. Además, se utilizaron variables de entorno secretas para almacenar las credenciales de usuario y contraseña de Docker Hub, mejorando así la seguridad en el código del pipeline.
 
